@@ -1,0 +1,108 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+  color:#fff;
+  scroll-behavior:smooth;
+}
+
+/* Glass Effect */
+.glass{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  border-radius:15px;
+  margin:20px;
+  padding:20px;
+}
+
+/* Header */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px;
+  position:sticky;
+  top:0;
+}
+
+header a{
+  color:#fff;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+/* Hero */
+.hero{
+  text-align:center;
+  padding:80px 20px;
+}
+
+.hero img{
+  width:130px;
+  border-radius:50%;
+  border:3px solid #3b82f6;
+}
+
+.hero span{
+  color:#3b82f6;
+}
+
+/* Button */
+.btn{
+  padding:12px 25px;
+  background:#3b82f6;
+  border:none;
+  color:#fff;
+  border-radius:30px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#2563eb;
+  transform:scale(1.05);
+}
+
+/* Sections */
+section{
+  padding:60px 40px;
+}
+
+/* Grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* Cards (FIXED ANIMATION START) */
+.card{
+  background:#1e293b;
+  padding:20px;
+  border-radius:15px;
+  opacity:0;
+  transform:translateY(50px);
+  transition:0.5s;
+}
+
+.card img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* Hover Effect */
+.hover:hover{
+  transform:translateY(-10px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:20px;
+}
